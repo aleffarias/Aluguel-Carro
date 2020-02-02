@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author alef_
+ * @author alef
  */
 public class Main extends Application {
     
@@ -21,7 +21,8 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 660, 420);
+        //scene.getStylesheets().add("/Main.css");
         
         stage.setScene(scene);
         stage.show();
