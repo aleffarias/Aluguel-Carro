@@ -13,22 +13,22 @@
 
 <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #2f3640;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="aluguelcarro.controller.SignUpController">
    <children>
-      <JFXTextField layoutX="189.0" layoutY="146.0" prefHeight="30.0" prefWidth="222.0" promptText="Insira seu nome">
+      <JFXTextField style="-fx-text-fill: white" layoutX="189.0" layoutY="146.0" prefHeight="30.0" prefWidth="222.0" promptText="Insira seu nome">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField layoutX="189.0" layoutY="277.0" prefHeight="30.0" prefWidth="222.0" promptText="Insira sua senha">
+      <JFXPasswordField style="-fx-text-fill: white" layoutX="189.0" layoutY="277.0" prefHeight="30.0" prefWidth="222.0" promptText="Insira sua senha">
          <font>
             <Font size="14.0" />
          </font>
       </JFXPasswordField>
-      <JFXPasswordField layoutX="189.0" layoutY="321.0" prefHeight="30.0" prefWidth="222.0" promptText="Confirme sua senha">
+      <JFXPasswordField style="-fx-text-fill: white" layoutX="189.0" layoutY="321.0" prefHeight="30.0" prefWidth="222.0" promptText="Confirme sua senha">
          <font>
             <Font size="14.0" />
          </font>
       </JFXPasswordField>
-      <JFXTextField layoutX="189.0" layoutY="195.0" prefHeight="30.0" prefWidth="222.0" promptText="Insira seu email">
+      <JFXTextField style="-fx-text-fill: white" layoutX="189.0" layoutY="195.0" prefHeight="30.0" prefWidth="222.0" promptText="Insira seu email">
          <font>
             <Font size="14.0" />
          </font>
@@ -61,7 +61,7 @@
             <Image url="@../assets/img/car.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="513.0" layoutY="25.0" style="-fx-background-color: #7F8FA6;" text="Entrar" textFill="WHITE">
+      <JFXButton layoutX="505.0" layoutY="31.0" style="-fx-background-color: #7F8FA6;" text="Entrar" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
