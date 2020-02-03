@@ -1,7 +1,7 @@
 # Aluguel-Carro
 Projeto referente a disciplina Engenharia de Software (P4)
 
-## Install Scenner Builder
+## Install Scene Builder
 
 1. Acesse o link para download do Scene Builder: 
 >https://www.oracle.com/java/technologies/javafxscenebuilder-1x-archive-downloads.html
