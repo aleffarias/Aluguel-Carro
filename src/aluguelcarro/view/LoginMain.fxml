@@ -10,24 +10,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2f3640;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2f3640;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aluguelcarro.controller.LoginController">
    <children>
-      <JFXTextField fx:id="textField" style="-fx-text-fill: white" layoutX="191.0" layoutY="175.0" prefHeight="25.0" prefWidth="218.0" promptText="Insira seu nome">
+      <JFXTextField fx:id="username" layoutX="191.0" layoutY="175.0" prefHeight="25.0" prefWidth="218.0" promptText="Insira seu nome" style="-fx-text-fill: white">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField style="-fx-text-fill: white" layoutX="191.0" layoutY="232.0" prefHeight="25.0" prefWidth="218.0" promptText="Insira sua senha">
+      <JFXPasswordField fx:id="password" layoutX="191.0" layoutY="232.0" prefHeight="25.0" prefWidth="218.0" promptText="Insira sua senha" style="-fx-text-fill: white">
          <font>
             <Font size="14.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton layoutX="485.0" layoutY="36.0" style="-fx-background-color: #7F8FA6;" text="Cadastrar" textFill="WHITE">
+      <JFXButton fx:id="buttonSignUp" layoutX="485.0" layoutY="36.0" onAction="#signUpButtonAction" style="-fx-background-color: #7F8FA6;" text="Cadastrar" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="237.0" layoutY="327.0" prefHeight="30.0" prefWidth="129.0" style="-fx-background-color: #7F8FA6;" text="Entrar" textFill="WHITE">
+      <JFXButton fx:id="buttonLogin" layoutX="237.0" layoutY="327.0" prefHeight="30.0" prefWidth="129.0" style="-fx-background-color: #7F8FA6;" text="Entrar" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
@@ -37,16 +37,6 @@
             <Image url="@../assets/img/car.png" />
          </image>
       </ImageView>
-      <Label layoutX="250.0" layoutY="116.0" text="AJ" textFill="#7f8fa6">
-         <font>
-            <Font name="System Bold" size="34.0" />
-         </font>
-      </Label>
-      <Label layoutX="300.0" layoutY="116.0" text="Car" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="34.0" />
-         </font>
-      </Label>
       <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="149.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/person.png" />
@@ -57,6 +47,16 @@
             <Image url="@../assets/img/lock.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="301.0" layoutY="277.0" text="Esqueceu a senha?" textFill="#575757" />
+      <JFXButton fx:id="ButtonForgotPassword" layoutX="301.0" layoutY="277.0" text="Esqueceu a senha?" textFill="#575757" />
+      <Label layoutX="257.0" layoutY="93.0" text="AJ" textFill="#7f8fa6">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="103.0" text="Car" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
