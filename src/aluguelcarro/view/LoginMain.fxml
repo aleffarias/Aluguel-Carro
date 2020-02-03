@@ -32,9 +32,9 @@
             <Font size="14.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="83.0" fitWidth="87.0" layoutX="259.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="90.0" fitWidth="89.0" layoutX="259.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/img/car.png" />
+            <Image url="@../assets/img/car-front100.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="149.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
