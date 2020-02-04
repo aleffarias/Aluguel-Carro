@@ -69,7 +69,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="-5.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="-4.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/img/arrow.png" />
                </image>
