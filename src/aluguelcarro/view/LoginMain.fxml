@@ -58,5 +58,10 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
+      <JFXButton fx:id="buttonLogin1" layoutX="25.0" layoutY="35.0" prefHeight="30.0" prefWidth="79.0" style="-fx-border-color: #7F8FA6;" text="Sair" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
