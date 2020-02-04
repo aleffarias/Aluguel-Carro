@@ -44,17 +44,17 @@
                   <Image url="@../assets/img/person.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="54.0" layoutY="193.0" text="Alugar" textFill="WHITE">
+            <JFXButton fx:id="buttonRent" layoutX="54.0" layoutY="193.0" text="Alugar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="53.0" layoutY="236.0" text="Cadastrar" textFill="WHITE">
+            <JFXButton fx:id="buttonRegister" layoutX="53.0" layoutY="236.0" text="Cadastrar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="52.0" layoutY="280.0" text="Meu Perfil" textFill="WHITE">
+            <JFXButton fx:id="buttonMyProfile" layoutX="52.0" layoutY="280.0" text="Meu Perfil" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -64,7 +64,7 @@
                   <Image url="@../assets/img/exit.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="53.0" layoutY="365.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #7F8FA6;" text="Sair" textFill="WHITE">
+            <JFXButton fx:id="buttonExit" layoutX="53.0" layoutY="365.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #7F8FA6;" text="Sair" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -83,34 +83,79 @@
       </Pane>
       <Pane layoutX="180.0" layoutY="48.0" prefHeight="127.0" prefWidth="410.0" style="-fx-background-radius: 10px; -fx-background-color: #F2F2F2; -fx-border-radius: 5px;">
          <children>
-            <Separator layoutX="307.0" opacity="0.44" orientation="VERTICAL" prefHeight="127.0" prefWidth="6.0" />
-            <JFXButton layoutX="321.0" layoutY="88.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #00b894;" text="Alugar" textFill="WHITE" />
-            <Label layoutX="314.0" layoutY="51.0" text="R$ 200">
+            <JFXButton fx:id="buttonRentCar" layoutX="321.0" layoutY="88.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #00b894;" text="Alugar" textFill="WHITE" />
+            <Label fx:id="price" layoutX="314.0" layoutY="51.0" text="R$ 200">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <ImageView fitHeight="67.0" fitWidth="68.0" layoutX="231.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="67.0" fitWidth="68.0" layoutX="231.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/img/car-front100.png" />
                </image>
             </ImageView>
-         </children>
-      </Pane>
-      <Pane layoutX="180.0" layoutY="200.0" prefHeight="127.0" prefWidth="410.0" style="-fx-background-radius: 10px; -fx-background-color: #F2F2F2; -fx-border-radius: 5px;">
-         <children>
-            <Separator layoutX="307.0" opacity="0.44" orientation="VERTICAL" prefHeight="127.0" prefWidth="6.0" />
-            <JFXButton layoutX="321.0" layoutY="88.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #00b894;" text="Alugar" textFill="WHITE" />
-            <Label layoutX="314.0" layoutY="51.0" text="R$ 200">
+            <Label layoutX="314.0" layoutY="35.0" text="Valor">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font size="12.0" />
                </font>
             </Label>
-            <ImageView fitHeight="67.0" fitWidth="68.0" layoutX="231.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <Label fx:id="carName" layoutX="14.0" layoutY="14.0" text="Renault Kwid">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="12.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/img/car-front100.png" />
+                  <Image url="@../assets/img/person.png" />
                </image>
             </ImageView>
+            <Label fx:id="carCapacity" layoutX="37.0" layoutY="43.0" text="5">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="55.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/door.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="doorNumber" layoutX="79.0" layoutY="43.0" text="4">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="19.0" fitWidth="28.0" layoutX="148.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/aC.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="aC" layoutX="173.0" layoutY="43.0" text="A/C">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="stickShift" fitHeight="18.0" fitWidth="25.0" layoutX="101.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/stick-shift.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="transmission" layoutX="124.0" layoutY="44.0" text="M">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="307.0" opacity="0.44" orientation="VERTICAL" prefHeight="127.0" prefWidth="6.0" />
+            <Label fx:id="year" layoutX="17.0" layoutY="99.0" text="2017">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="87.0" opacity="0.86" prefHeight="0.0" prefWidth="307.0" />
+            <Label fx:id="trunck" layoutX="79.0" layoutY="98.0" text="Mala: Pequena">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
