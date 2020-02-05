@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.svg.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
@@ -11,15 +13,6 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aluguelcarro.controller.RegisterController">
    <children>
-      <Pane layoutX="233.0" layoutY="234.0" prefHeight="57.0" prefWidth="135.0" style="-fx-border-color: #4d4d4d; -fx-border-radius: 5px;">
-         <children>
-            <Label layoutX="16.0" layoutY="-8.0" style="-fx-background-color: white;" text="Portas">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
       <Separator layoutX="131.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="407.0" prefWidth="0.0" />
       <Pane layoutX="-2.0" prefHeight="406.0" prefWidth="156.0" style="-fx-background-color: #2f3640;">
          <children>
@@ -80,37 +73,89 @@
             </JFXButton>
          </children>
       </Pane>
-      <JFXTextField layoutX="233.0" layoutY="37.0" prefHeight="28.0" prefWidth="253.0" promptText="Insira a marca">
+      <JFXTextField layoutX="187.0" layoutY="72.0" prefHeight="30.0" prefWidth="206.0" promptText="Insira a marca">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField layoutX="233.0" layoutY="80.0" prefHeight="28.0" prefWidth="253.0" promptText="Insira o modelo">
+      <JFXTextField layoutX="188.0" layoutY="116.0" prefHeight="30.0" prefWidth="206.0" promptText="Insira o modelo">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField layoutX="245.0" layoutY="131.0" prefHeight="28.0" prefWidth="79.0" promptText="Ano">
+      <JFXTextField layoutX="469.0" layoutY="75.0" prefHeight="30.0" prefWidth="79.0" promptText="Ano">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField layoutX="369.0" layoutY="131.0" prefHeight="28.0" prefWidth="111.0" promptText="Quilometragem">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField layoutX="233.0" layoutY="177.0" prefHeight="28.0" prefWidth="253.0" promptText="Capacidade passageiros" />
       <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="-6.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/arrow.png" />
          </image>
       </ImageView>
-      <JFXRadioButton layoutX="253.0" layoutY="253.0" text="2">
+      <JFXToggleButton layoutX="408.0" layoutY="263.0" prefHeight="28.0" prefWidth="105.0" text="A/C" />
+      <Label layoutX="308.0" layoutY="30.0" text="Cadastar Carro">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="252.0" layoutY="363.0" prefHeight="30.0" prefWidth="253.0" style="-fx-background-color: #55efc4;" text="Cadastar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="154.0" prefHeight="30.0" prefWidth="447.0" style="-fx-background-color: #b2bec3;" />
+      <JFXRadioButton layoutX="257.0" layoutY="190.0" text="4" textFill="#4d4d4d">
          <toggleGroup>
-            <ToggleGroup fx:id="Door" />
+            <ToggleGroup fx:id="MaleFemale" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="195.0" layoutY="190.0" selected="true" text="2" textFill="#4d4d4d" toggleGroup="$MaleFemale">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <Label layoutX="189.0" layoutY="164.0" text="Portas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="469.0" layoutY="116.0" prefHeight="30.0" prefWidth="79.0" promptText="Ano" text="Passageiros">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField alignment="CENTER" layoutX="311.0" layoutY="310.0" prefHeight="39.0" prefWidth="125.0" promptText="Ano" text="Valor Diário">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXToggleButton layoutX="198.0" layoutY="263.0" prefHeight="58.0" prefWidth="186.0" text="Câmbio Automático" />
+      <Label layoutX="191.0" layoutY="218.0" text="Porta Mala">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton layoutX="197.0" layoutY="244.0" selected="true" text="Pequeno" textFill="#4d4d4d">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="truck" />
          </toggleGroup>
       </JFXRadioButton>
-      <JFXRadioButton layoutX="313.0" layoutY="253.0" selected="true" text="4" toggleGroup="$Door" />
+      <JFXRadioButton layoutX="301.0" layoutY="244.0" text="Médio" textFill="#4d4d4d" toggleGroup="$truck">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="393.0" layoutY="244.0" text="Grande" textFill="#4d4d4d" toggleGroup="$truck">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
    </children>
 </AnchorPane>
