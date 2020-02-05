@@ -57,7 +57,7 @@
       </JFXButton>
       <ImageView fitHeight="83.0" fitWidth="87.0" layoutX="259.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/img/car.png" />
+            <Image url="@../assets/img/car-front100.png" />
          </image>
       </ImageView>
       <JFXButton fx:id="buttonLogin" layoutX="505.0" layoutY="31.0" style="-fx-background-color: #7F8FA6;" text="Entrar" textFill="WHITE">

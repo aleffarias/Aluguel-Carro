@@ -86,7 +86,7 @@
          <children>
             <JFXButton fx:id="buttonRentCar" layoutX="321.0" layoutY="88.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #00b894;" text="Alugar" textFill="WHITE" />
             <Separator layoutX="303.0" orientation="VERTICAL" prefHeight="127.0" prefWidth="6.0" />
-            <Label fx:id="price" layoutX="315.0" layoutY="51.0" text="R$ 200">
+            <Label fx:id="price" layoutX="315.0" layoutY="51.0" text="R$ 200" textFill="#434343">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
