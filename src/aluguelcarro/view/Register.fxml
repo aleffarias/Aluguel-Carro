@@ -11,81 +11,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aluguelcarro.controller.RegisterController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aluguelcarro.controller.RegisterController">
    <children>
-      <Separator layoutX="131.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="407.0" prefWidth="0.0" />
-      <Pane layoutX="-2.0" prefHeight="406.0" prefWidth="156.0" style="-fx-background-color: #2f3640;">
-         <children>
-            <Label layoutX="81.0" layoutY="61.0" text="Car" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Label>
-            <Label layoutX="45.0" layoutY="48.0" text="AJ" textFill="#7f8fa6">
-               <font>
-                  <Font name="System Bold" size="28.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="41.0" fitWidth="72.0" layoutX="58.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/img/car-front100.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="15.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/img/rent.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="15.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/img/car-add.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="15.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/img/person.png" />
-               </image>
-            </ImageView>
-            <JFXButton layoutX="54.0" layoutY="193.0" text="Alugar" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXButton>
-            <JFXButton layoutX="53.0" layoutY="236.0" text="Cadastrar" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXButton>
-            <JFXButton layoutX="52.0" layoutY="280.0" text="Meu Perfil" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </JFXButton>
-            <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="15.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/img/exit.png" />
-               </image>
-            </ImageView>
-            <JFXButton layoutX="53.0" layoutY="365.0" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #7F8FA6;" text="Sair" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </JFXButton>
-         </children>
-      </Pane>
-      <JFXTextField layoutX="187.0" layoutY="72.0" prefHeight="30.0" prefWidth="206.0" promptText="Insira a marca">
+      <Separator layoutX="201.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="7.0" />
+      <JFXTextField layoutX="281.0" layoutY="140.0" prefHeight="39.0" prefWidth="230.0" promptText="Insira a marca">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </JFXTextField>
-      <JFXTextField layoutX="188.0" layoutY="116.0" prefHeight="30.0" prefWidth="206.0" promptText="Insira o modelo">
+      <JFXTextField layoutX="282.0" layoutY="194.0" prefHeight="39.0" prefWidth="230.0" promptText="Insira o modelo">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </JFXTextField>
-      <JFXTextField layoutX="469.0" layoutY="75.0" prefHeight="30.0" prefWidth="79.0" promptText="Ano">
+      <JFXTextField layoutX="580.0" layoutY="143.0" prefHeight="39.0" prefWidth="105.0" promptText="Ano">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </JFXTextField>
       <ImageView fitHeight="18.0" fitWidth="20.0" layoutX="-6.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
@@ -93,69 +34,147 @@
             <Image url="@../assets/img/arrow.png" />
          </image>
       </ImageView>
-      <JFXToggleButton layoutX="408.0" layoutY="263.0" prefHeight="28.0" prefWidth="105.0" text="A/C" />
-      <Label layoutX="308.0" layoutY="30.0" text="Cadastar Carro">
+      <JFXToggleButton layoutX="565.0" layoutY="418.0" prefHeight="62.0" prefWidth="112.0" text="A/C">
          <font>
-            <Font name="System Bold" size="22.0" />
+            <Font size="18.0" />
+         </font></JFXToggleButton>
+      <Label layoutX="402.0" layoutY="63.0" text="Cadastar Carro">
+         <font>
+            <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <JFXButton layoutX="252.0" layoutY="363.0" prefHeight="30.0" prefWidth="253.0" style="-fx-background-color: #55efc4;" text="Cadastar" textFill="WHITE">
+      <JFXButton layoutX="341.0" layoutY="539.0" prefHeight="39.0" prefWidth="294.0" style="-fx-background-color: #00b894; -fx-background-radius: 5px;" text="Cadastar" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </JFXButton>
-      <Pane layoutX="154.0" prefHeight="30.0" prefWidth="447.0" style="-fx-background-color: #b2bec3;" />
-      <JFXRadioButton layoutX="257.0" layoutY="190.0" text="4" textFill="#4d4d4d">
+      <Pane layoutX="203.0" prefHeight="45.0" prefWidth="597.0" style="-fx-background-color: #b2bec3;" />
+      <JFXRadioButton layoutX="351.0" layoutY="286.0" text="4" textFill="#4d4d4d">
          <toggleGroup>
             <ToggleGroup fx:id="MaleFemale" />
          </toggleGroup>
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </JFXRadioButton>
-      <JFXRadioButton layoutX="195.0" layoutY="190.0" selected="true" text="2" textFill="#4d4d4d" toggleGroup="$MaleFemale">
+      <JFXRadioButton layoutX="289.0" layoutY="286.0" selected="true" text="2" textFill="#4d4d4d" toggleGroup="$MaleFemale">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </JFXRadioButton>
-      <Label layoutX="189.0" layoutY="164.0" text="Portas">
+      <Label layoutX="283.0" layoutY="260.0" text="Portas">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="469.0" layoutY="116.0" prefHeight="30.0" prefWidth="79.0" promptText="Ano" text="Passageiros">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField alignment="CENTER" layoutX="311.0" layoutY="310.0" prefHeight="39.0" prefWidth="125.0" promptText="Ano" text="Valor Diário">
+      <JFXTextField layoutX="580.0" layoutY="196.0" prefHeight="39.0" prefWidth="105.0" promptText="Passageiros">
          <font>
             <Font size="18.0" />
          </font>
       </JFXTextField>
-      <JFXToggleButton layoutX="198.0" layoutY="263.0" prefHeight="58.0" prefWidth="186.0" text="Câmbio Automático" />
-      <Label layoutX="191.0" layoutY="218.0" text="Porta Mala">
+      <JFXTextField alignment="CENTER" layoutX="426.0" layoutY="480.0" prefHeight="39.0" prefWidth="125.0" promptText="Valor Diário">
          <font>
-            <Font size="14.0" />
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXToggleButton layoutX="294.0" layoutY="418.0" prefHeight="62.0" prefWidth="247.0" text="Câmbio Automático">
+         <font>
+            <Font size="18.0" />
+         </font></JFXToggleButton>
+      <Label layoutX="285.0" layoutY="337.0" text="Porta Mala">
+         <font>
+            <Font size="18.0" />
          </font>
       </Label>
-      <JFXRadioButton layoutX="197.0" layoutY="244.0" selected="true" text="Pequeno" textFill="#4d4d4d">
+      <JFXRadioButton layoutX="287.0" layoutY="363.0" selected="true" text="Pequeno" textFill="#4d4d4d">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
          <toggleGroup>
             <ToggleGroup fx:id="truck" />
          </toggleGroup>
       </JFXRadioButton>
-      <JFXRadioButton layoutX="301.0" layoutY="244.0" text="Médio" textFill="#4d4d4d" toggleGroup="$truck">
+      <JFXRadioButton layoutX="415.0" layoutY="363.0" text="Médio" textFill="#4d4d4d" toggleGroup="$truck">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </JFXRadioButton>
-      <JFXRadioButton layoutX="393.0" layoutY="244.0" text="Grande" textFill="#4d4d4d" toggleGroup="$truck">
+      <JFXRadioButton layoutX="521.0" layoutY="363.0" text="Grande" textFill="#4d4d4d" toggleGroup="$truck">
          <font>
-            <Font size="14.0" />
+            <Font size="18.0" />
          </font>
       </JFXRadioButton>
+      <Pane layoutX="-1.0" prefHeight="600.0" prefWidth="204.0" style="-fx-background-color: #2f3640;">
+         <children>
+            <Label layoutX="99.0" layoutY="92.0" text="Car" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="81.0" text="AJ" textFill="#7f8fa6">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="70.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/car-front100.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="rentButton" graphicTextGap="12.0" layoutX="14.0" layoutY="248.0" text="Alugar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/rent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="registerButton" graphicTextGap="12.0" layoutX="13.0" layoutY="310.0" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/car-add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="myProfileButton" graphicTextGap="12.0" layoutX="12.0" layoutY="376.0" text="Meu Perfil" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/person.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="exitButton" graphicTextGap="35.0" layoutX="22.0" layoutY="544.0" prefHeight="48.0" prefWidth="146.0" style="-fx-border-color: #7F8FA6; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Sair" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/img/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="-7.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
