@@ -22,12 +22,12 @@
             <Font size="18.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton fx:id="buttonSignUp" layoutX="653.0" layoutY="45.0" onAction="#signUpButtonAction" style="-fx-background-color: #7F8FA6; -fx-background-radius: 5px;" text="Cadastrar" textFill="WHITE">
+      <JFXButton fx:id="buttonSignUp" layoutX="653.0" layoutY="45.0" onAction="#handleButtonClicks" style="-fx-background-color: #7F8FA6; -fx-background-radius: 5px;" text="Cadastrar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="buttonLogin" layoutX="300.0" layoutY="512.0" prefHeight="39.0" prefWidth="189.0" style="-fx-background-color: #7F8FA6; -fx-background-radius: 5px;" text="Entrar" textFill="WHITE">
+      <JFXButton fx:id="buttonLogin" layoutX="300.0" layoutY="512.0" onAction="#handleButtonClicks" prefHeight="39.0" prefWidth="189.0" style="-fx-background-color: #7F8FA6; -fx-background-radius: 5px;" text="Entrar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -61,7 +61,7 @@
             <Font name="System Bold" size="35.0" />
          </font>
       </Label>
-      <JFXButton fx:id="buttonLogin1" layoutX="47.0" layoutY="45.0" prefHeight="30.0" prefWidth="79.0" style="-fx-border-color: #7F8FA6; -fx-border-radius: 5px;" text="Sair" textFill="WHITE">
+      <JFXButton fx:id="buttonExit" layoutX="47.0" layoutY="45.0" prefHeight="30.0" prefWidth="79.0" style="-fx-border-color: #7F8FA6; -fx-border-radius: 5px;" text="Sair" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
