@@ -36,5 +36,4 @@ public class RentController implements Initializable, ControlledScreen {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
-    
 }
