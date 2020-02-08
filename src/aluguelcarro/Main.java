@@ -1,11 +1,12 @@
-package aluguelcarro.controller;
+package aluguelcarro;
 
+import aluguelcarro.controller.Controller;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ScreensFramework extends Application {
+public class Main extends Application {
     
     public static String mainID = "main";
     public static String mainFile = "/aluguelcarro/view/LoginMain.fxml";
@@ -23,13 +24,13 @@ public class ScreensFramework extends Application {
     public void start(Stage primaryStage) throws Exception {
         
         Controller mainContainer = new Controller();
-        mainContainer.loadScreen(ScreensFramework.mainID, ScreensFramework.mainFile);
-        //mainContainer.loadScreen(ScreensFramework.signUpID, ScreensFramework.signUpFile);
-        //mainContainer.loadScreen(ScreensFramework.rentID, ScreensFramework.rentFile);
-        //mainContainer.loadScreen(ScreensFramework.registerID, ScreensFramework.registerFile);
-        //mainContainer.loadScreen(ScreensFramework.myProfileID, ScreensFramework.myProfileFile);
+        mainContainer.loadScreen(Main.mainID, Main.mainFile);
+        mainContainer.loadScreen(Main.signUpID, Main.signUpFile);
+        mainContainer.loadScreen(Main.rentID, Main .rentFile);
+        mainContainer.loadScreen(Main.registerID, Main.registerFile);
+        mainContainer.loadScreen(Main.myProfileID, Main.myProfileFile);
         
-        mainContainer.setScreen(ScreensFramework.mainID);
+        mainContainer.setScreen(Main.mainID);
         
         Group root = new Group();
         root.getChildren().addAll(mainContainer);
