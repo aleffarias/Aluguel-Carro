@@ -1,6 +1,5 @@
 package aluguelcarro.controller;
 
-import aluguelcarro.model.Handle;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -10,8 +9,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-public class LoginController extends Controller implements Initializable, Handle {
+public class LoginController extends Controller implements Initializable, ControlledScreen {
 
+    Controller myController;
+    
     @FXML
     private JFXTextField username;
     
@@ -27,22 +28,18 @@ public class LoginController extends Controller implements Initializable, Handle
     @FXML
     private JFXButton ButtonForgotPassword;
 
+      @FXML
+    void signUpButtonAction(ActionEvent event) {
+        myController.setScreen(ScreensFramework.mainID);
+    }
     
     @Override
     public void initialize(URL location, ResourceBundle rb) {
     }
-    
-    @FXML
-    @Override
-     public void handleButtonClicks(ActionEvent mouseEvent) {
-         if (mouseEvent.getSource() == buttonSignUp) loadStage(buttonSignUp, "/aluguelcarro/view/SignUp.fxml");
-         else if (mouseEvent.getSource() == buttonLogin) loadStage(buttonLogin, "/aluguelcarro/view/Rent.fxml");
-         
-     }
 
     @Override
-    public void exitAction(ActionEvent mouseEvent) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setScreenParent(Controller screenParent) {
+        myController = screenParent;
     }
-          
+                 
 }
