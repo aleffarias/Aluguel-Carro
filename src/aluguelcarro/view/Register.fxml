@@ -104,7 +104,7 @@
             <Font size="18.0" />
          </font>
       </JFXRadioButton>
-      <Pane layoutX="-1.0" prefHeight="600.0" prefWidth="204.0" style="-fx-background-color: #2f3640;">
+      <Pane prefHeight="600.0" prefWidth="204.0" style="-fx-background-color: #2f3640;">
          <children>
             <Label layoutX="99.0" layoutY="92.0" text="Car" textFill="WHITE">
                <font>
@@ -121,7 +121,7 @@
                   <Image url="@../assets/img/car-front100.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="rentButton" graphicTextGap="12.0" layoutX="14.0" layoutY="248.0" text="Alugar" textFill="WHITE">
+            <JFXButton fx:id="rentButton" graphicTextGap="12.0" layoutX="14.0" layoutY="248.0" onAction="#rentButtonAction" text="Alugar" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -145,7 +145,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="myProfileButton" graphicTextGap="12.0" layoutX="12.0" layoutY="376.0" text="Meu Perfil" textFill="WHITE">
+            <JFXButton fx:id="myProfileButton" graphicTextGap="12.0" layoutX="12.0" layoutY="376.0" onAction="#myProfileButtonAction" text="Meu Perfil" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -157,7 +157,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="exitButton" graphicTextGap="35.0" layoutX="22.0" layoutY="544.0" prefHeight="48.0" prefWidth="146.0" style="-fx-border-color: #7F8FA6; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Sair" textFill="WHITE">
+            <JFXButton fx:id="exitButton" graphicTextGap="35.0" layoutX="22.0" layoutY="544.0" onAction="#exitButtonAction" prefHeight="48.0" prefWidth="146.0" style="-fx-border-color: #7F8FA6; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Sair" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

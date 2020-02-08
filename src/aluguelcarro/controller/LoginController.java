@@ -1,5 +1,6 @@
 package aluguelcarro.controller;
 
+import aluguelcarro.Main;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -27,19 +28,31 @@ public class LoginController extends Controller implements Initializable, Contro
 
     @FXML
     private JFXButton ButtonForgotPassword;
-
-      @FXML
-    void signUpButtonAction(ActionEvent event) {
-        myController.setScreen(ScreensFramework.mainID);
+    
+    @FXML
+    @Override
+    public void exitButtonAction(ActionEvent event) {
+        System.exit(0);
     }
     
-    @Override
-    public void initialize(URL location, ResourceBundle rb) {
+    @FXML
+    void loginButtonAction(ActionEvent event) {
+        // Add verification
+        myController.setScreen(Main.rentID);
+    }
+
+    @FXML
+    void signUpButtonAction(ActionEvent event) {
+        myController.setScreen(Main.signUpID);
     }
 
     @Override
     public void setScreenParent(Controller screenParent) {
         myController = screenParent;
+    }
+    
+    @Override
+    public void initialize(URL location, ResourceBundle rb) {
     }
                  
 }
