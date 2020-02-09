@@ -1,4 +1,4 @@
-# Aluguel-Carro
+# Aluguel-CarroFX
 Projeto referente a disciplina Engenharia de Software (P4)
 
 ## Install Scene Builder
