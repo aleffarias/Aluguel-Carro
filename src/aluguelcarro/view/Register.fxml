@@ -14,17 +14,17 @@
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aluguelcarro.controller.RegisterController">
    <children>
       <Separator layoutX="201.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="7.0" />
-      <JFXTextField fx:id="brand" layoutX="281.0" layoutY="140.0" prefHeight="39.0" prefWidth="230.0" promptText="Insira a marca">
+      <JFXTextField layoutX="281.0" layoutY="140.0" prefHeight="39.0" prefWidth="230.0" promptText="Insira a marca">
          <font>
             <Font size="18.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="model" layoutX="282.0" layoutY="194.0" prefHeight="39.0" prefWidth="230.0" promptText="Insira o modelo">
+      <JFXTextField layoutX="282.0" layoutY="194.0" prefHeight="39.0" prefWidth="230.0" promptText="Insira o modelo">
          <font>
             <Font size="18.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="year" layoutX="580.0" layoutY="143.0" prefHeight="39.0" prefWidth="105.0" promptText="Ano">
+      <JFXTextField layoutX="580.0" layoutY="143.0" prefHeight="39.0" prefWidth="105.0" promptText="Ano">
          <font>
             <Font size="18.0" />
          </font>
@@ -34,7 +34,7 @@
             <Image url="@../assets/img/arrow.png" />
          </image>
       </ImageView>
-      <JFXToggleButton fx:id="ac" layoutX="565.0" layoutY="418.0" prefHeight="62.0" prefWidth="164.0" text="A/C">
+      <JFXToggleButton layoutX="565.0" layoutY="418.0" prefHeight="62.0" prefWidth="112.0" text="A/C">
          <font>
             <Font size="18.0" />
          </font></JFXToggleButton>
@@ -49,15 +49,15 @@
          </font>
       </JFXButton>
       <Pane layoutX="203.0" prefHeight="45.0" prefWidth="597.0" style="-fx-background-color: #b2bec3;" />
-      <JFXRadioButton fx:id="door4" layoutX="351.0" layoutY="286.0" text="4" textFill="#4d4d4d">
+      <JFXRadioButton layoutX="351.0" layoutY="286.0" text="4" textFill="#4d4d4d">
+         <toggleGroup>
+            <ToggleGroup fx:id="MaleFemale" />
+         </toggleGroup>
          <font>
             <Font size="18.0" />
          </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="doors" />
-         </toggleGroup>
       </JFXRadioButton>
-      <JFXRadioButton fx:id="door2" layoutX="289.0" layoutY="286.0" selected="true" text="2" textFill="#4d4d4d" toggleGroup="$doors">
+      <JFXRadioButton layoutX="289.0" layoutY="286.0" selected="true" text="2" textFill="#4d4d4d" toggleGroup="$MaleFemale">
          <font>
             <Font size="18.0" />
          </font>
@@ -67,17 +67,17 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="capacity" layoutX="580.0" layoutY="196.0" prefHeight="39.0" prefWidth="105.0" promptText="Passageiros">
+      <JFXTextField layoutX="580.0" layoutY="196.0" prefHeight="39.0" prefWidth="105.0" promptText="Passageiros">
          <font>
             <Font size="18.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="price" alignment="CENTER" layoutX="426.0" layoutY="480.0" prefHeight="39.0" prefWidth="125.0" promptText="Valor Diário">
+      <JFXTextField alignment="CENTER" layoutX="426.0" layoutY="480.0" prefHeight="39.0" prefWidth="125.0" promptText="Valor Diário">
          <font>
             <Font size="20.0" />
          </font>
       </JFXTextField>
-      <JFXToggleButton fx:id="automaticTransmission" layoutX="294.0" layoutY="418.0" prefHeight="62.0" prefWidth="247.0" text="Câmbio Automático">
+      <JFXToggleButton layoutX="294.0" layoutY="418.0" prefHeight="62.0" prefWidth="247.0" text="Câmbio Automático">
          <font>
             <Font size="18.0" />
          </font></JFXToggleButton>
@@ -86,7 +86,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <JFXRadioButton fx:id="truck1" layoutX="287.0" layoutY="363.0" selected="true" text="Pequeno" textFill="#4d4d4d">
+      <JFXRadioButton layoutX="287.0" layoutY="363.0" selected="true" text="Pequeno" textFill="#4d4d4d">
          <font>
             <Font size="18.0" />
          </font>
@@ -94,12 +94,12 @@
             <ToggleGroup fx:id="truck" />
          </toggleGroup>
       </JFXRadioButton>
-      <JFXRadioButton fx:id="truck2" layoutX="415.0" layoutY="363.0" text="Médio" textFill="#4d4d4d" toggleGroup="$truck">
+      <JFXRadioButton layoutX="415.0" layoutY="363.0" text="Médio" textFill="#4d4d4d" toggleGroup="$truck">
          <font>
             <Font size="18.0" />
          </font>
       </JFXRadioButton>
-      <JFXRadioButton fx:id="truck3" layoutX="521.0" layoutY="363.0" text="Grande" textFill="#4d4d4d" toggleGroup="$truck">
+      <JFXRadioButton layoutX="521.0" layoutY="363.0" text="Grande" textFill="#4d4d4d" toggleGroup="$truck">
          <font>
             <Font size="18.0" />
          </font>
