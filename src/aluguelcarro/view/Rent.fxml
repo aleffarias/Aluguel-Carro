@@ -91,6 +91,11 @@
                </font>
             </Label>
             <Separator layoutX="1.0" layoutY="106.0" prefHeight="1.0" prefWidth="424.0" />
+            <Label fx:id="user" layoutX="437.0" layoutY="5.0" text="Usuário">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <Pane prefHeight="600.0" prefWidth="204.0" style="-fx-background-color: #2f3640;">

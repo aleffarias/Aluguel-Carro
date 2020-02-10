@@ -32,7 +32,7 @@
             <Font size="18.0" />
          </font>
       </JFXTextField>
-      <JFXRadioButton layoutX="312.0" layoutY="346.0" selected="true" text="Masculino" textFill="#4d4d4d">
+      <JFXRadioButton fx:id="male" layoutX="312.0" layoutY="346.0" selected="true" text="Masculino" textFill="#4d4d4d">
          <font>
             <Font size="18.0" />
          </font>
@@ -40,7 +40,7 @@
             <ToggleGroup fx:id="MaleFemale" />
          </toggleGroup>
       </JFXRadioButton>
-      <JFXRadioButton layoutX="443.0" layoutY="346.0" text="Feminino" textFill="#4d4d4d" toggleGroup="$MaleFemale">
+      <JFXRadioButton fx:id="female" layoutX="443.0" layoutY="346.0" text="Feminino" textFill="#4d4d4d" toggleGroup="$MaleFemale">
          <font>
             <Font size="18.0" />
          </font>

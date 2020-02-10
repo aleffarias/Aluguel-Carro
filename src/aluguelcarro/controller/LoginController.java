@@ -1,6 +1,7 @@
 package aluguelcarro.controller;
 
 import aluguelcarro.Main;
+import aluguelcarro.model.dao.LoginDAO;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -9,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javax.swing.JOptionPane;
 
 public class LoginController extends Controller implements Initializable, ControlledScreen {
 
@@ -19,16 +21,7 @@ public class LoginController extends Controller implements Initializable, Contro
     
     @FXML
     private JFXPasswordField password;
-    
-    @FXML
-    private JFXButton buttonSignUp;
-
-    @FXML
-    private JFXButton buttonLogin;
-
-    @FXML
-    private JFXButton ButtonForgotPassword;
-    
+   
     @FXML
     @Override
     public void exitButtonAction(ActionEvent event) {
@@ -37,8 +30,15 @@ public class LoginController extends Controller implements Initializable, Contro
     
     @FXML
     void loginButtonAction(ActionEvent event) {
-        // Add verification
-        myController.setScreen(Main.rentID);
+        
+        LoginDAO login = new LoginDAO();
+        
+        if (login.checkLogin(username.getText(), password.getText())) {
+            myController.setScreen(Main.rentID);
+        } else {
+            JOptionPane.showMessageDialog(null, "Usuário ou senha inválido!");
+        }     
+        
     }
 
     @FXML
