@@ -6,10 +6,17 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
 public class MyProfileController implements Initializable, ControlledScreen {
 
     Controller myController;  
+    
+    @FXML
+    private Label username;
+    
+    @FXML
+    private Label email;
     
     @FXML
     void rentButtonAction(ActionEvent event) {
