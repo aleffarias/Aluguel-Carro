@@ -11,7 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-public class RegisterController implements Initializable, ControlledScreen {
+public class RegisterController extends Controller implements Initializable, ControlledScreen {
     
     Controller myController;  
     

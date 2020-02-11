@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
-public class MyProfileController implements Initializable, ControlledScreen {
+public class MyProfileController extends Controller implements Initializable, ControlledScreen {
 
     Controller myController;
     

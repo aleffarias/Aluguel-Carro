@@ -7,7 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-public class RentController implements Initializable, ControlledScreen {
+public class RentController extends Controller implements Initializable, ControlledScreen {
     
     Controller myController;  
     
