@@ -6,8 +6,16 @@ public class Client {
     private String email;
     private String gender;
     private String password;
-
-     public int getId() {
+    
+    public Client (String username, String email, String gender, String password){
+        this.username = username;
+        this.email = email;
+        this.gender = gender;
+        this.password = password;
+    }
+    
+    
+    public int getId() {
         return idClient;
     }
 

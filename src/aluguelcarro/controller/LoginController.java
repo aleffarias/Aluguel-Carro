@@ -1,11 +1,13 @@
 package aluguelcarro.controller;
 
 import aluguelcarro.Main;
-import aluguelcarro.model.dao.LoginDAO;
+import aluguelcarro.model.bean.Client;
+import aluguelcarro.util.DataBase;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,6 +17,9 @@ import javax.swing.JOptionPane;
 public class LoginController extends Controller implements Initializable, ControlledScreen {
 
     Controller myController;
+    
+    private DataBase dataBase = DataBase.getInstance();
+    private ArrayList<Client> users = dataBase.getUsers();
     
     @FXML
     private JFXTextField username;
@@ -31,14 +36,14 @@ public class LoginController extends Controller implements Initializable, Contro
     @FXML
     void loginButtonAction(ActionEvent event) {
         
-        LoginDAO login = new LoginDAO();
-        
-        if (login.checkLogin(username.getText(), password.getText())) {
+        if (dataBase.authenticationUser(username.getText(), password.getText()) == true) {
+            
+            UserController.setCurrentUser(username.getText());
+            
             myController.setScreen(Main.rentID);
         } else {
             JOptionPane.showMessageDialog(null, "Usuário ou senha inválido!");
         }     
-        
     }
 
     @FXML
@@ -54,5 +59,5 @@ public class LoginController extends Controller implements Initializable, Contro
     @Override
     public void initialize(URL location, ResourceBundle rb) {
     }
-                 
+                  
 }

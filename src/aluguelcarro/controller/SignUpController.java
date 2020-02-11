@@ -2,11 +2,12 @@ package aluguelcarro.controller;
 
 import aluguelcarro.Main;
 import aluguelcarro.model.bean.Client;
-import aluguelcarro.model.dao.ClientDAO;
+import aluguelcarro.util.DataBase;
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXRadioButton;
 import com.jfoenix.controls.JFXTextField;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -17,6 +18,8 @@ import javax.swing.JOptionPane;
 public class SignUpController extends Controller implements Initializable, ControlledScreen {
     
     Controller myController;
+    
+    private DataBase dataBase;
     
     @FXML
     private JFXTextField username;
@@ -43,24 +46,23 @@ public class SignUpController extends Controller implements Initializable, Contr
     }
     
     @FXML
-    void signUpButtonAction(ActionEvent event) {
-        Client client = new Client();
-        ClientDAO dao = new ClientDAO();
+    void signUpButtonAction(ActionEvent event) throws IOException {
         
-        client.setName(username.getText());
-        client.setEmail(email.getText());
-        client.setGender(getGender());
-        client.setPassword(password.getText());
+        Client user = new Client(username.getText(), email.getText(), getGender(), password.getText());
         
-        dao.create(client);
+        dataBase = DataBase.getInstance();
+        dataBase.setUsers(user);
         
+        
+        JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso.");
+        myController.setScreen(Main.mainID);    
+
         // clean the screen
         username.setText("");
         email.setText("");
         password.setText("");
-        passwordConfirm.setText("");
+        passwordConfirm.setText("");   
         
-        myController.setScreen(Main.mainID);    
     }
 
     @FXML
@@ -80,7 +82,7 @@ public class SignUpController extends Controller implements Initializable, Contr
     
     public String getGender(){
     
-        String gender = "";
+       String gender = "";
         
        if (male.isSelected()) {
             gender = "Homem";

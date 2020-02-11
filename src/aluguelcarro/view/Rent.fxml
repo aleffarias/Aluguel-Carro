@@ -20,7 +20,7 @@
                   <Font name="System Bold" size="18.0" />
                </font></JFXButton>
             <Separator layoutX="425.0" orientation="VERTICAL" prefHeight="149.0" prefWidth="6.0" />
-            <Label fx:id="price" layoutX="438.0" layoutY="66.0" text="R$ 200" textFill="#434343">
+            <Label fx:id="price" layoutX="438.0" layoutY="66.0" text="R$ 150" textFill="#434343">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -171,5 +171,81 @@
          </children>
       </Pane>
       <Pane layoutX="204.0" prefHeight="45.0" prefWidth="597.0" style="-fx-background-color: #b2bec3;" />
+      <Pane layoutX="231.0" layoutY="261.0" prefHeight="149.0" prefWidth="543.0" style="-fx-background-radius: 10px; -fx-background-color: #F2F2F2; -fx-border-radius: 5px;">
+         <children>
+            <JFXButton fx:id="rentCarButton1" layoutX="440.0" layoutY="102.0" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #00b894; -fx-background-radius: 5px;" text="Alugar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="425.0" orientation="VERTICAL" prefHeight="149.0" prefWidth="6.0" />
+            <Label fx:id="price1" layoutX="438.0" layoutY="66.0" text="R$ 80" textFill="#434343">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="91.0" fitWidth="92.0" layoutX="334.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/uno.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="437.0" layoutY="45.0" text="Valor">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="carName1" layoutX="14.0" layoutY="6.0" text="Fiat Uno">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="12.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/person.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="carCapacity1" layoutX="37.0" layoutY="53.0" text="5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="30.0" layoutX="58.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/door.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="doorNumber1" layoutX="86.0" layoutY="53.0" text="4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="stickShift1" fitHeight="20.0" fitWidth="25.0" layoutX="107.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/stick-shift.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="gearShift1" layoutX="131.0" layoutY="53.0" text="M">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="year1" layoutX="25.0" layoutY="118.0" text="2015">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="trunck1" layoutX="100.0" layoutY="117.0" text="Mala: Pequena">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="106.0" prefHeight="1.0" prefWidth="424.0" />
+            <Label fx:id="user1" layoutX="437.0" layoutY="5.0" text="Usuário">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

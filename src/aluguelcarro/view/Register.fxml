@@ -43,7 +43,7 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <JFXButton layoutX="341.0" layoutY="539.0" prefHeight="39.0" prefWidth="294.0" style="-fx-background-color: #00b894; -fx-background-radius: 5px;" text="Cadastar" textFill="WHITE">
+      <JFXButton fx:id="registerButton" layoutX="341.0" layoutY="539.0" onAction="#registerButtonAction" prefHeight="39.0" prefWidth="294.0" style="-fx-background-color: #00b894; -fx-background-radius: 5px;" text="Cadastar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
